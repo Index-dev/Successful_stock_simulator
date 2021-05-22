@@ -1,4 +1,4 @@
-# invest
+# SSS (Successful Stock Simulator)
 
 ```
     client: React / Typescript
