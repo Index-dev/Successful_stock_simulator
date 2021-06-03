@@ -8,4 +8,4 @@ def getKOSDAQStockInfo():
 
 if __name__ == '__main__':
     result_df = getKOSDAQStockInfo()
-    print(result_df)
+    print(result_df.info())
