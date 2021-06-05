@@ -1,5 +1,12 @@
+import Header from "components/header/home";
+
 function Presenter({ text }: HomePresenterIState) {
-  return <div>{text}</div>;
+  return (
+    <div>
+      <Header />
+      {text}
+    </div>
+  );
 }
 
 export default Presenter;
