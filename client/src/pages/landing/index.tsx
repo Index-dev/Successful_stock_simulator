@@ -14,19 +14,25 @@ const Divider = styled.div`
     margin:  2%  2% 0% 0%;
 `
 const Content = styled.div`
-    display: flex;
-    height: 50%;
+    /* display: flex; */
+    flex-flow: column;
+    height: 100%;
+    width: 100%;
+    /* height: 50vh; */
     justify-content: space-around;
 `
 
 const Template = styled.div`
     background-color: #f6f5f1da;
-    width: 40%;
-    height: -webkit-fill-available;
+    width: 50%;
     margin: 3%;
     padding: 5%;
-    border-radius: 5%;
+    border-radius: 20px;
+    height: -webkit-fill-available;
     text-align: center;
+`
+const Row = styled.div`
+    display: flex;
 `
 const Landing = ()=>{
     return(
@@ -34,6 +40,7 @@ const Landing = ()=>{
             <header>Successful Stock Simulator</header>
             <Divider/>
             <Content>
+                <Row>
                 {/* 즐겨찾기 list */}
                 <Template>
                     <ul>
@@ -54,8 +61,8 @@ const Landing = ()=>{
                         <li> target 5 </li>
                     </ul>
                 </Template>
-            </Content>
-            <Content>
+                </Row>
+                <Row>
                 {/* 즐겨찾기 list */}
                 <Template>
                     <ul>
@@ -70,6 +77,7 @@ const Landing = ()=>{
                 <Template>
                     <BarChart/>
                 </Template>
+                </Row>
             </Content>
 
         </LandingMain>
