@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import BarChart from "./Bar";
+import LineChart from "../../components/chart/Line";
 
 const LandingMain = styled.div`
     width: 100vw;
@@ -76,7 +76,7 @@ const Landing = ()=>{
                 </Template>
                 {/* 이번주 최다 구매 증권 */}
                 <Template>
-                    {/* <BarChart/> */}
+                    <LineChart/>
                 </Template>
                 </Row>
             </Content>
