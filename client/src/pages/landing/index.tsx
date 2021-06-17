@@ -16,7 +16,8 @@ const Divider = styled.div`
 const Content = styled.div`
     /* display: flex; */
     flex-flow: column;
-    height: 100%;
+    /* height: 100%; */
+    height: -webkit-fill-available;
     width: 100%;
     /* height: 50vh; */
     justify-content: space-around;
@@ -28,7 +29,7 @@ const Template = styled.div`
     margin: 3%;
     padding: 5%;
     border-radius: 20px;
-    height: -webkit-fill-available;
+    /* height: -webkit-fill-available; */
     text-align: center;
 `
 const Row = styled.div`
@@ -75,7 +76,7 @@ const Landing = ()=>{
                 </Template>
                 {/* 이번주 최다 구매 증권 */}
                 <Template>
-                    <BarChart/>
+                    {/* <BarChart/> */}
                 </Template>
                 </Row>
             </Content>

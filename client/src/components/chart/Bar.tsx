@@ -20,7 +20,7 @@ const BarChart = () => {
           <h2>Bar Example (custom size)</h2>
           <Bar
             data={data}
-            width={100}
+            width={50}
             height={50}
             type={Bar}
             options={{
