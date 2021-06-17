@@ -23,7 +23,14 @@ const data = {
 const LineChart = () => {
     return (
       <div>
-        <Line  type="line" data={data}/>
+        <Line 
+        type="line" 
+        data={data}
+        options={{
+          responsive: true,
+          maintainAspectRatio: false,
+        }}
+        />
       </div>
     );
   }

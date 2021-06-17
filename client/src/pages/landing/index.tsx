@@ -1,6 +1,8 @@
 import React from "react";
 import styled from "styled-components";
 import LineChart from "../../components/chart/Line";
+import DoughnutChart from "../../components/chart/Doughnut";
+import PieChart from "../../components/chart/Pie";
 
 const LandingMain = styled.div`
     width: 100vw;
@@ -29,6 +31,7 @@ const Template = styled.div`
     margin: 3%;
     padding: 5%;
     border-radius: 20px;
+    height: 200px;
     /* height: -webkit-fill-available; */
     text-align: center;
 `
@@ -54,25 +57,13 @@ const Landing = ()=>{
                 </Template>
                 {/* 이번주 최다 구매 증권 */}
                 <Template>
-                    <ul>
-                        <li> target 1 </li>
-                        <li> target 2 </li>
-                        <li> target 3 </li>
-                        <li> target 4 </li>
-                        <li> target 5 </li>
-                    </ul>
+                    <PieChart/>
                 </Template>
                 </Row>
                 <Row>
                 {/* 즐겨찾기 list */}
                 <Template>
-                    <ul>
-                        <li> target 1 </li>
-                        <li> target 2 </li>
-                        <li> target 3 </li>
-                        <li> target 4 </li>
-                        <li> target 5 </li>
-                    </ul>
+                    <DoughnutChart/>
                 </Template>
                 {/* 이번주 최다 구매 증권 */}
                 <Template>
